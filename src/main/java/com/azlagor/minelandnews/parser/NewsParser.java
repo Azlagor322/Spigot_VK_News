@@ -56,6 +56,7 @@ public class NewsParser {
             return;
         }
         JsonArray itemsArray = jsonObject.getAsJsonObject("response").getAsJsonArray("items");
+        CacheManager.clear();
         for(JsonElement post : itemsArray.asList())
         {
             JsonObject postObject  = post.getAsJsonObject();
@@ -67,7 +68,6 @@ public class NewsParser {
     }
     private static void initData(int id, String text, long date)
     {
-        CacheManager.clear();
         CacheManager.putCache(id,text);
         DataBase.insert(id,date);
     }
