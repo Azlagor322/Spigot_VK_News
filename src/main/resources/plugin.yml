@@ -1,0 +1,8 @@
+name: minelandnews
+version: '${project.version}'
+main: com.azlagor.minelandnews.Minelandnews
+api-version: '1.20'
+commands:
+  news:
+    description: News Command
+    permission: azlagor.command.news
