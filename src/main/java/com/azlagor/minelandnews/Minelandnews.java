@@ -1,6 +1,6 @@
 package com.azlagor.minelandnews;
 
-import com.azlagor.minelandnews.Parser.TaskParser;
+import com.azlagor.minelandnews.parser.TaskParser;
 import com.azlagor.minelandnews.managers.ConfigManager;
 import com.azlagor.minelandnews.managers.Gui;
 import org.bukkit.event.EventHandler;

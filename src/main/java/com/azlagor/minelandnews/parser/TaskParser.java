@@ -1,4 +1,4 @@
-package com.azlagor.minelandnews.Parser;
+package com.azlagor.minelandnews.parser;
 
 import com.azlagor.minelandnews.Minelandnews;
 import org.bukkit.scheduler.BukkitRunnable;

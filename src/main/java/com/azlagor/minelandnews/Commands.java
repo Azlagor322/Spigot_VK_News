@@ -1,7 +1,6 @@
 package com.azlagor.minelandnews;
 
-import com.azlagor.minelandnews.Parser.NewsParser;
-import com.azlagor.minelandnews.db.DataBase;
+import com.azlagor.minelandnews.parser.NewsParser;
 import com.azlagor.minelandnews.managers.ConfigManager;
 import com.azlagor.minelandnews.managers.Gui;
 import org.bukkit.command.Command;

@@ -1,4 +1,4 @@
-package com.azlagor.minelandnews.Parser;
+package com.azlagor.minelandnews.parser;
 
 import com.azlagor.minelandnews.Minelandnews;
 import com.azlagor.minelandnews.db.DataBase;
@@ -7,6 +7,7 @@ import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import org.jooq.impl.QOM;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -38,7 +39,7 @@ public class NewsParser {
                 reader.close();
                 parseContent(response.toString());
             } else {
-                System.err.println("Ошибка при выполнении запроса: " + responseCode);
+                Minelandnews.plugin.getLogger().log(Level.WARNING,"Ошибка при выполнении запроса: " + responseCode);
             }
         } catch (Exception e) {
             e.printStackTrace();
